@@ -1,14 +1,50 @@
-# Claude Code OS — Kit Ratos de IA
+# Lucas Nery — Claude Code OS
 
-Este repositório é o kit de boas-vindas do curso Claude Code OS.
+## O que é esse workspace
 
-Se você acabou de clonar esse repositório:
-1. Rode `/setup` pra configurar o sistema pro seu negócio (uns 5 minutos)
-2. Depois rode `/mapear` pra criar skills personalizadas pro que você faz no dia a dia
+Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. Aqui ficam clientes, entregas, roteiros, estratégias e ferramentas de trabalho.
+
+**Estrutura de pastas:**
+- `_contexto/` — memória do sistema (não apagar)
+- `clientes/` — um subdiretório por cliente com briefing, relatórios e copys
+- `conteudo/` — produção de roteiros, copys e estratégias
+- `templates/` — modelos reutilizáveis
+- `dados/` — arquivos para análise (CSV, PDF, relatórios de plataforma)
+- `tarefas.md` — lista de tarefas e pendências
+- `templates/skills/` — templates de skills prontos pra personalizar com /mapear
+- `templates/ferramentas/catalogo.md` — APIs e ferramentas disponíveis pra usar em skills
+
+## Sobre o negócio
+
+Lucas Nery, freelancer de gestão de tráfego pago e copywriting. Atende clientes externos com foco em Meta Ads e Google Ads, produzindo relatórios de performance, copies, roteiros para anúncios e estratégias de campanha.
+
+## O que mais fazemos aqui
+
+- Gestão de campanhas no Meta Ads e Google Ads
+- Criação de copies e roteiros para anúncios
+- Relatórios de performance de campanha
+- Desenvolvimento de estratégias de mídia paga
+
+## Clientes e contexto
+
+Atende clientes externos. Trabalha solo.
+
+## Tom de voz
+
+Direto, lógico, estruturado e orientado à execução. Respostas práticas com hierarquia clara. Análise crítica com identificação de riscos e contrapontos — sem validação automática de ideias. Linguagem simples e profissional, sem clichês ou frases motivacionais.
+
+Evitar: abstrações desnecessárias, explicações longas sem aplicação prática, validação automática, frases genéricas motivacionais.
+
+## Ferramentas conectadas
+
+- [ ] Meta Ads (Facebook Ads MCP)
+- [ ] Google Ads MCP
+- [ ] Google Drive
+- [ ] WhatsApp
+
+*(Marcar conforme for instalando os MCPs)*
 
 ---
-
-<!-- Este arquivo será atualizado pelo /setup com o contexto do seu negócio. -->
 
 ## Contexto do negócio
 

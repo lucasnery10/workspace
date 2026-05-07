@@ -12,3 +12,7 @@
 ## Contexto adicional
 
 Trabalha sozinho atendendo múltiplos clientes. Foco em mídia paga (Meta e Google) com entrega de copy, roteiros e estratégia integrada.
+
+## Clientes ativos
+
+- **José Prestes** — Fotógrafo brasileiro em Paris. Ensaios turísticos nos principais pontos da cidade. Meta Ads + Google Ads (R$1.000 cada). Ticket médio 150€. Instagram: @jprestesparis

@@ -16,3 +16,10 @@ Trabalha sozinho atendendo múltiplos clientes. Foco em mídia paga (Meta e Goog
 ## Clientes ativos
 
 - **José Prestes** — Fotógrafo brasileiro em Paris. Ensaios turísticos nos principais pontos da cidade. Meta Ads + Google Ads (R$1.000 cada). Ticket médio 150€. Instagram: @jprestesparis
+- **Explore Milão** — Passeios e transfers premium em Milão.
+- **Nicolli** — Fotografia em Milão e Lago di Como.
+- **Robson Oliveira Arq** — Arquitetura (projetos residenciais e comerciais). Instagram: @robsonoliveira.arq
+- **Essencialmed** — (briefing a preencher)
+- **Lojas Piana** — (briefing a preencher)
+- **Matheus Grando** — (briefing a preencher)
+- **Pixel Perfect** — (briefing a preencher)

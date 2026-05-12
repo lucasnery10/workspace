@@ -9,7 +9,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
 - `clientes/` — um subdiretório por cliente com briefing, relatórios e copys
   - `explore-milao/` — passeios e transfers premium em Milão
   - `nicolli/` — fotografia em Milão e Lago di Como
-  - `robson-oliveira-arq/` — arquitetura (onboarding pendente)
+  - `robson-oliveira-arq/` — arquitetura
   - `lojas-piana/`, `essencialmed/`, `jose-prestes/`, `matheus-grando/`, `pixel-perfect/`
 - `conteudo/` — produção de roteiros, copys e estratégias
 - `templates/` — modelos reutilizáveis

@@ -7,6 +7,10 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
 **Estrutura de pastas:**
 - `_contexto/` — memória do sistema (não apagar)
 - `clientes/` — um subdiretório por cliente com briefing, relatórios e copys
+  - `explore-milao/` — passeios e transfers premium em Milão
+  - `nicolli/` — fotografia em Milão e Lago di Como
+  - `robson-oliveira-arq/` — arquitetura (onboarding pendente)
+  - `lojas-piana/`, `essencialmed/`, `jose-prestes/`, `matheus-grando/`, `pixel-perfect/`
 - `conteudo/` — produção de roteiros, copys e estratégias
 - `templates/` — modelos reutilizáveis
 - `dados/` — arquivos para análise (CSV, PDF, relatórios de plataforma)

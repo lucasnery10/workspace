@@ -12,6 +12,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
   - `robson-oliveira-arq/` — arquitetura
   - `lojas-piana/`, `essencialmed/`, `jose-prestes/`, `matheus-grando/`, `pixel-perfect/`
 - `conteudo/` — produção de roteiros, copys e estratégias
+- `marca/` — identidade visual (design-guide.md, logo e assets de marca)
 - `templates/` — modelos reutilizáveis
 - `dados/` — arquivos para análise (CSV, PDF, relatórios de plataforma)
 - `tarefas.md` — lista de tarefas e pendências
@@ -47,6 +48,10 @@ Evitar: abstrações desnecessárias, explicações longas sem aplicação prát
 - [ ] WhatsApp
 
 *(Marcar conforme for instalando os MCPs)*
+
+## Skills instaladas
+
+- `find-skills` — localiza skills disponíveis no registro (instalada via `npx skills add`)
 
 ---
 

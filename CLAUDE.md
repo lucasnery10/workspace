@@ -42,7 +42,7 @@ Evitar: abstrações desnecessárias, explicações longas sem aplicação prát
 
 ## Ferramentas conectadas
 
-- [ ] Meta Ads (Facebook Ads MCP)
+- [x] Meta Ads (skill meta-ads-ratos — SDK facebook-business, token válido até 17/07/2026)
 - [ ] Google Ads MCP
 - [ ] Google Drive
 - [ ] WhatsApp
@@ -52,6 +52,7 @@ Evitar: abstrações desnecessárias, explicações longas sem aplicação prát
 ## Skills instaladas
 
 - `find-skills` — localiza skills disponíveis no registro (instalada via `npx skills add`)
+- `meta-ads-ratos` — gestão completa de campanhas via SDK (leitura, criação, insights, duplicação)
 
 ---
 

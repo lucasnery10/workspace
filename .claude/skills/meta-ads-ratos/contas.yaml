@@ -33,3 +33,43 @@ clientes:
   #   notas: "qualquer observacao relevante"
 
   # -- Suas contas abaixo --
+
+  explore-milao:
+    nome: "Explore Milão"
+    conta_anuncio: "act_1680932959471550"
+    pagina_facebook: "210653942123910"
+    instagram_id: "17841460135966750"
+    instagram_username: "@exploremilao"
+    moeda: "BRL"
+
+  nicolli:
+    nome: "Nicolli Turqueti"
+    conta_anuncio: "act_342479199961866"
+    pagina_facebook: "828806703992985"
+    instagram_id: "17841407027340281"
+    instagram_username: "@nicolliturquetiphoto"
+    moeda: "BRL"
+
+  robson-oliveira:
+    nome: "Robson Oliveira"
+    conta_anuncio: "act_1203328401913517"
+    pagina_facebook: "101229588036540"
+    instagram_id: "17841407673063962"
+    instagram_username: "@robsonoliveira.arq"
+    moeda: "BRL"
+
+  lojas-piana:
+    nome: "Lojas Piana"
+    conta_anuncio: "act_847792591017586"
+    pagina_facebook: "715477505196714"
+    instagram_id: "17841407132868616"
+    instagram_username: "@piana.chapeco"
+    moeda: "BRL"
+
+  matheus-grando:
+    nome: "Matheus Grando"
+    conta_anuncio: "act_1602025604169019"
+    pagina_facebook: "996850276839204"
+    instagram_id: "17841408516761884"
+    instagram_username: "@matheusgrando_corretor"
+    moeda: "BRL"

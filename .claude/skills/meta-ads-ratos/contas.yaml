@@ -73,3 +73,19 @@ clientes:
     instagram_id: "17841408516761884"
     instagram_username: "@matheusgrando_corretor"
     moeda: "BRL"
+
+  essencial-med:
+    nome: "Essencial Med"
+    conta_anuncio: "act_1301033965061539"
+    pagina_facebook: "809276498931414"
+    instagram_id: "17841473844207095"
+    instagram_username: "@essencial.med"
+    moeda: "BRL"
+
+  pixel-perfect:
+    nome: "Pixel Perfect"
+    conta_anuncio: "act_664469103353692"
+    pagina_facebook: "680741125120073"
+    instagram_id: "17841459016536965"
+    instagram_username: "@pixel.perfect_mkt"
+    moeda: "BRL"

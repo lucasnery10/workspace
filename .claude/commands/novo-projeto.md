@@ -37,6 +37,14 @@ Perguntar em conversa natural (uma pergunta por vez):
 
 **Pergunta 4:** "Tem prazo, orçamento ou ferramenta específica que eu precise saber?"
 
+**Pergunta 5 (somente se tipo = Cliente):** "Me passa os dados de Meta Ads do cliente para eu já cadastrar tudo:
+- Conta de anúncio (act_XXX)
+- Page ID do Facebook
+- Instagram ID (numérico)
+- @ do Instagram"
+
+Se o usuário não tiver esses dados na hora, pode pular — mas perguntar. Se der, cadastrar no passo 3b.
+
 Se o usuário der respostas completas logo na primeira, pular as perguntas já respondidas.
 
 ### Passo 2: Definir a pasta
@@ -88,10 +96,37 @@ Se for **cliente**, adicionar também:
 ## Contato
 [nome do contato, se mencionou]
 
+## Meta Ads
+- Conta de anúncio: act_XXXXXXXXX
+- Page ID Facebook: XXXXXXXXX
+- Instagram ID: XXXXXXXXX
+- Instagram @: @username
+
 ## Entregas
 - [ ] [entrega 1]
 - [ ] [entrega 2]
 ```
+
+### Passo 3b: Cadastrar no contas.yaml (somente se cliente com dados Meta Ads)
+
+Se o usuário forneceu os dados de Meta Ads, cadastrar automaticamente no arquivo:
+`.claude/skills/meta-ads-ratos/contas.yaml`
+
+Usar o slug em kebab-case do nome do cliente (ex: "João Silva" → `joao-silva`).
+
+Formato a adicionar:
+
+```yaml
+  slug-do-cliente:
+    nome: "Nome do Cliente"
+    conta_anuncio: "act_XXXXXXXXX"
+    pagina_facebook: "XXXXXXXXX"
+    instagram_id: "XXXXXXXXX"
+    instagram_username: "@username"
+    moeda: "BRL"
+```
+
+Confirmar após adicionar: "Cadastrei [Nome] no contas.yaml da skill meta-ads-ratos."
 
 ### Passo 4: Atualizar o CLAUDE.md principal
 
@@ -123,6 +158,7 @@ Projeto criado!
 Pasta: clientes/fabio-haag/
 CLAUDE.md: clientes/fabio-haag/CLAUDE.md
 Referência: adicionado na estrutura de pastas do CLAUDE.md principal
+Meta Ads: cadastrado no contas.yaml (ou "dados não informados — cadastrar depois com /meta-ads-ratos")
 
 Pra trabalhar nesse projeto, é só falar. O Claude já vai ler o contexto da pasta.
 ```

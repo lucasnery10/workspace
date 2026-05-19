@@ -54,6 +54,7 @@ Evitar: abstrações desnecessárias, explicações longas sem aplicação prát
 - `find-skills` — localiza skills disponíveis no registro (instalada via `npx skills add`)
 - `meta-ads-ratos` — gestão completa de campanhas via SDK (leitura, criação, insights, duplicação)
 - `google-ads-ratos` — gestão completa de Google Ads via SDK (leitura, criação, insights, GAQL)
+- `ads-ratos` — diagnóstico, relatório, auditoria e estratégia com benchmarks brasileiros e Health Score
 
 ---
 

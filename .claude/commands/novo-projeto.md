@@ -107,7 +107,39 @@ Se for **cliente**, adicionar também:
 - [ ] [entrega 2]
 ```
 
-### Passo 3b: Cadastrar no contas.yaml (somente se cliente com dados Meta Ads)
+### Passo 3b: Criar estrutura de subpastas (somente se tipo = Cliente)
+
+Para projetos de cliente, sempre criar as seguintes subpastas e arquivos automaticamente:
+
+```
+clientes/nome-do-cliente/
+├── CLAUDE.md          ← já criado no passo 3
+├── briefing.md        ← criar com template abaixo
+├── copys/             ← criar pasta vazia
+└── relatorios/        ← criar pasta vazia
+```
+
+**Template do briefing.md:**
+
+```markdown
+# Briefing — [Nome do Cliente]
+
+**Negócio:** 
+**Produto/Serviço principal:** 
+**Público-alvo:** 
+**Objetivo da campanha:** 
+**Plataformas:** 
+**Orçamento mensal:** 
+**Período:** 
+
+## Contexto adicional
+
+## Referências e materiais
+```
+
+Se o usuário já forneceu dados no onboarding (briefing, formulário, PDF), preencher o briefing.md com essas informações em vez de deixar o template vazio.
+
+### Passo 3c: Cadastrar no contas.yaml (somente se cliente com dados Meta Ads)
 
 Se o usuário forneceu os dados de Meta Ads, cadastrar automaticamente no arquivo:
 `.claude/skills/meta-ads-ratos/contas.yaml`
@@ -157,6 +189,9 @@ Projeto criado!
 
 Pasta: clientes/fabio-haag/
 CLAUDE.md: clientes/fabio-haag/CLAUDE.md
+briefing.md: clientes/fabio-haag/briefing.md
+copys/: clientes/fabio-haag/copys/
+relatorios/: clientes/fabio-haag/relatorios/
 Referência: adicionado na estrutura de pastas do CLAUDE.md principal
 Meta Ads: cadastrado no contas.yaml (ou "dados não informados — cadastrar depois com /meta-ads-ratos")
 
@@ -166,8 +201,9 @@ Pra trabalhar nesse projeto, é só falar. O Claude já vai ler o contexto da pa
 ## Regras
 
 - Tom direto, sem cerimônia
-- Não criar subpastas dentro do projeto a menos que o usuário peça
+- Para projetos de **cliente**, sempre criar `briefing.md`, `copys/` e `relatorios/` automaticamente — sem precisar perguntar
+- Para outros tipos (produto, conteúdo, interno), não criar subpastas a menos que o usuário peça
 - O CLAUDE.md do projeto deve ser curto (menos de 30 linhas no início). Vai crescer com o uso
 - Nunca mover pastas existentes sem perguntar
-- Se o usuário já criou a pasta manualmente, só gerar o CLAUDE.md dentro dela
+- Se o usuário já criou a pasta manualmente, só gerar o CLAUDE.md e a estrutura padrão dentro dela
 - Respeitar a estrutura de pastas que o `/setup` criou pra aquele perfil

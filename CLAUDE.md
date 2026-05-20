@@ -16,7 +16,6 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
 - `marca/` — identidade visual (design-guide.md, logo e assets de marca)
 - `templates/` — modelos reutilizáveis
 - `dados/` — arquivos para análise (CSV, PDF, relatórios de plataforma)
-- `tarefas.md` — lista de tarefas e pendências
 - `templates/skills/` — templates de skills prontos pra personalizar com /mapear
 - `templates/ferramentas/catalogo.md` — APIs e ferramentas disponíveis pra usar em skills
 

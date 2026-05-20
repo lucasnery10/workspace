@@ -23,4 +23,4 @@ Trabalha sozinho atendendo múltiplos clientes. Foco em mídia paga (Meta e Goog
 - **Lojas Piana** — (briefing a preencher)
 - **Matheus Grando** — (briefing a preencher)
 - **Pixel Perfect** — (briefing a preencher)
-- **Okta Filmes** — Produtora audiovisual (eventos, institucionais, fotografia). Base em Florianópolis/SC. Fundador: Eduardo Franceschi. Google Ads ativo (R$1.500/mês). Ticket médio R$5k-R$30k. Instagram: @oktafilmes
+- **Okta Filmes** — Produtora audiovisual (eventos, institucionais, fotografia). Base em Florianópolis/SC. Fundador: Eduardo Franceschi. Google Ads ativo (R$62/dia — R$36 campanha okta + R$26 campanha EDU). Ticket médio R$5k-R$30k. Instagram: @oktafilmes

@@ -11,6 +11,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
   - `nicolli/` — fotografia em Milão e Lago di Como
   - `robson-oliveira-arq/` — arquitetura
   - `lojas-piana/`, `essencialmed/`, `jose-prestes/`, `matheus-grando/`, `pixel-perfect/`
+  - `okta-filmes/` — produtora audiovisual, Florianópolis/SC (Google Ads ativo)
 - `conteudo/` — produção de roteiros, copys e estratégias
 - `marca/` — identidade visual (design-guide.md, logo e assets de marca)
 - `templates/` — modelos reutilizáveis

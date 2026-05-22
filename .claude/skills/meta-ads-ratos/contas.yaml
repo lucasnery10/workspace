@@ -34,6 +34,15 @@ clientes:
 
   # -- Suas contas abaixo --
 
+  valente-barber:
+    nome: "Valente Barber Club"
+    conta_anuncio: "act_1236585775277124"
+    pagina_facebook: "962319483639514"
+    instagram_id: "17841420754399626"
+    instagram_username: "@valentebarberclub"
+    moeda: "BRL"
+    notas: "Barbearia + curso de barbeiro em Videira/SC. Três linhas: agendamento, curso e infantil. Contato: Alvaro. Cliente da Create."
+
   barbearia-portugal:
     nome: "Barbearia Portugal"
     conta_anuncio: "act_9023521601100712"

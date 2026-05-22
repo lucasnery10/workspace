@@ -6,12 +6,17 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
 
 **Estrutura de pastas:**
 - `_contexto/` — memória do sistema (não apagar)
-- `clientes/` — um subdiretório por cliente com briefing, relatórios e copys
-  - `explore-milao/` — passeios e transfers premium em Milão
-  - `nicolli/` — fotografia em Milão e Lago di Como
-  - `robson-oliveira-arq/` — arquitetura
-  - `lojas-piana/`, `essencialmed/`, `jose-prestes/`, `matheus-grando/`, `pixel-perfect/`
-  - `okta-filmes/` — produtora audiovisual, Florianópolis/SC (Google Ads ativo)
+- `clientes/` — organizado em três grupos:
+  - `Grupo TR/` — clientes da agência Grupo TR
+    - `explore-milao/` — passeios e transfers premium em Milão
+    - `nicolli/` — fotografia em Milão e Lago di Como
+    - `robson-oliveira-arq/` — arquitetura
+    - `jose-prestes/`
+    - `okta-filmes/` — produtora audiovisual, Florianópolis/SC (Google Ads ativo)
+  - `Create/` — clientes da agência Create
+    - `sorria-mais/` — clínica odontológica, Joaçaba/SC (implantes e facetas)
+  - `Meus Clientes/` — clientes próprios (fora de agência)
+    - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`
 - `conteudo/` — produção de roteiros, copys e estratégias
 - `marca/` — identidade visual (design-guide.md, logo e assets de marca)
 - `templates/` — modelos reutilizáveis

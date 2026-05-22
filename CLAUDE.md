@@ -21,6 +21,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `valente-barber/` — barbearia + curso de barbeiro, Videira/SC
     - `ludik/` — marca de cosméticos masculinos para barbearias
     - `ancoras-tattoo/` — estúdio de tatuagem e piercing premium, Cascavel/PR
+    - `comel-construcoes/` — engenharia civil e construção, obras residenciais completas
   - `Meus Clientes/` — clientes próprios (fora de agência)
     - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`
 - `conteudo/` — produção de roteiros, copys e estratégias

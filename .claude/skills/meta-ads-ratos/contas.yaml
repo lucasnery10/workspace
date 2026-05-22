@@ -34,6 +34,15 @@ clientes:
 
   # -- Suas contas abaixo --
 
+  rama-odontologia:
+    nome: "Rama Odontologia"
+    conta_anuncio: "act_1151637609297567"
+    pagina_facebook: "336450256208991"
+    instagram_id: "17841462622499771"
+    instagram_username: "@ramaodontologia"
+    moeda: "BRL"
+    notas: "Clínica odontológica em Chapecó/SC. Dr. Josemar Caldão. Foco: implantes, facetas e clareamento. Cliente da Create."
+
   valente-barber:
     nome: "Valente Barber Club"
     conta_anuncio: "act_1236585775277124"

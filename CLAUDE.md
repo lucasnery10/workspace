@@ -17,6 +17,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `sorria-mais/` — clínica odontológica, Joaçaba/SC (implantes e facetas)
     - `arcari-odontologia/` — clínica odontológica premium, Chapecó/SC (implantes e facetas)
     - `barbearia-portugal/` — barbearia masculina premium (agendamentos via Meta Ads)
+    - `rama-odontologia/` — clínica odontológica, Chapecó/SC (implantes, facetas, clareamento)
     - `valente-barber/` — barbearia + curso de barbeiro, Videira/SC
     - `ludik/` — marca de cosméticos masculinos para barbearias
   - `Meus Clientes/` — clientes próprios (fora de agência)

@@ -23,6 +23,7 @@ Trabalha sozinho atendendo múltiplos clientes. Foco em mídia paga (Meta e Goog
 - **Lojas Piana** — (briefing a preencher)
 - **Matheus Grando** — (briefing a preencher)
 - **Pixel Perfect** — (briefing a preencher)
+- **Barbearia Portugal** — Barbearia masculina premium. Meta Ads (agendamentos). Contato: Rodrigo. Cliente da Create. Instagram: @barbeariaportugal_
 - **Arcari Odontologia** — Clínica odontológica premium em Chapecó/SC. Implantes, facetas e clareamento. Meta Ads (WhatsApp). Cliente da Create. Instagram: @arcariodontologia
 - **Sorria Mais** — Clínica odontológica em Joaçaba/SC. Foco em implantes dentários, protocolo e facetas. Meta Ads (WhatsApp). Cliente da Create. Instagram: @sorriamaisjoacaba
 - **Ludik** — Marca de cosméticos masculinos para barbearias. Meta Ads (cliques e WhatsApp). Contato: Alvaro. Cliente da Create.

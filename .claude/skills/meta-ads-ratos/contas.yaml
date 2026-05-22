@@ -34,6 +34,15 @@ clientes:
 
   # -- Suas contas abaixo --
 
+  barbearia-portugal:
+    nome: "Barbearia Portugal"
+    conta_anuncio: "act_9023521601100712"
+    pagina_facebook: "508387509022605"
+    instagram_id: "17841408694571767"
+    instagram_username: "@barbeariaportugal_"
+    moeda: "BRL"
+    notas: "Barbearia masculina premium. Contato: Rodrigo. Cliente da Create."
+
   arcari-odontologia:
     nome: "Arcari Odontologia"
     conta_anuncio: "act_1331332831454865"

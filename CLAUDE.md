@@ -16,6 +16,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
   - `Create/` — clientes da agência Create
     - `sorria-mais/` — clínica odontológica, Joaçaba/SC (implantes e facetas)
     - `arcari-odontologia/` — clínica odontológica premium, Chapecó/SC (implantes e facetas)
+    - `barbearia-portugal/` — barbearia masculina premium (agendamentos via Meta Ads)
     - `ludik/` — marca de cosméticos masculinos para barbearias
   - `Meus Clientes/` — clientes próprios (fora de agência)
     - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`

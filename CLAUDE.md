@@ -27,7 +27,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
   - `Meus Clientes/` — clientes próprios (fora de agência)
     - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`
 - `conteudo/` — produção de roteiros, copys e estratégias
-- `marca/` — identidade visual (design-guide.md, logo e assets de marca)
+
 - `templates/` — modelos reutilizáveis
 - `dados/` — arquivos para análise (CSV, PDF, relatórios de plataforma)
 - `templates/skills/` — templates de skills prontos pra personalizar com /mapear
@@ -68,7 +68,7 @@ Evitar: abstrações desnecessárias, explicações longas sem aplicação prát
 - `find-skills` — localiza skills disponíveis no registro (instalada via `npx skills add`)
 - `meta-ads-ratos` — gestão completa de campanhas via SDK (leitura, criação, insights, duplicação)
 - `google-ads-ratos` — gestão completa de Google Ads via SDK (leitura, criação, insights, GAQL)
-- `ads-ratos` — diagnóstico, relatório, auditoria e estratégia com benchmarks brasileiros e Health Score
+- `ads-ratos` — diagnóstico, relatório, auditoria e estratégia com benchmarks brasileiros e Health Score (global)
 
 ---
 
@@ -81,8 +81,6 @@ No início de toda conversa, ler os seguintes arquivos (se existirem e estiverem
 3. `_contexto/estrategia.md` — foco atual, prioridades, o que pode esperar
 
 Usar essas informações como base pra qualquer resposta ou decisão. Ao sugerir prioridades, formatos ou abordagens, considerar o foco atual descrito em `estrategia.md`.
-
-Para qualquer tarefa visual (carrossel, proposta, slide, landing page), consultar `marca/design-guide.md` como referência de estilo.
 
 Não é necessário listar o que foi lido nem confirmar a leitura. Apenas usar o contexto naturalmente.
 

@@ -34,6 +34,15 @@ clientes:
 
   # -- Suas contas abaixo --
 
+  sorria-mais:
+    nome: "Sorria Mais"
+    conta_anuncio: "act_357696086707710"
+    pagina_facebook: "907680599330066"
+    instagram_id: ""
+    instagram_username: "@sorriamaisjoacaba"
+    moeda: "BRL"
+    notas: "Clínica odontológica em Joaçaba/SC. Cliente da Create."
+
   explore-milao:
     nome: "Explore Milão"
     conta_anuncio: "act_1680932959471550"

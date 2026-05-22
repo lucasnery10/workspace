@@ -23,6 +23,7 @@ Trabalha sozinho atendendo múltiplos clientes. Foco em mídia paga (Meta e Goog
 - **Lojas Piana** — (briefing a preencher)
 - **Matheus Grando** — (briefing a preencher)
 - **Pixel Perfect** — (briefing a preencher)
+- **Arcari Odontologia** — Clínica odontológica premium em Chapecó/SC. Implantes, facetas e clareamento. Meta Ads (WhatsApp). Cliente da Create. Instagram: @arcariodontologia
 - **Sorria Mais** — Clínica odontológica em Joaçaba/SC. Foco em implantes dentários, protocolo e facetas. Meta Ads (WhatsApp). Cliente da Create. Instagram: @sorriamaisjoacaba
 - **Ludik** — Marca de cosméticos masculinos para barbearias. Meta Ads (cliques e WhatsApp). Contato: Alvaro. Cliente da Create.
 - **Okta Filmes** — Produtora audiovisual (eventos, institucionais, fotografia). Base em Florianópolis/SC. Fundador: Eduardo Franceschi. Google Ads ativo (R$62/dia — R$36 campanha okta + R$26 campanha EDU). Ticket médio R$5k-R$30k. Instagram: @oktafilmes. Site: oktafilmes.com.br (novo). Edu: edudosvideos.com.br. Campanhas segmentadas por página (home, /institucional/, /eventos/). Fotografia incluída nas keywords de eventos e institucional. Raio: Okta amplo (SC+), Edu restrito à Grande Floripa. Pendente: verificar tags GTM no site novo (aguardando acesso do cliente).

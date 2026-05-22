@@ -15,6 +15,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `okta-filmes/` — produtora audiovisual, Florianópolis/SC (Google Ads ativo)
   - `Create/` — clientes da agência Create
     - `sorria-mais/` — clínica odontológica, Joaçaba/SC (implantes e facetas)
+    - `arcari-odontologia/` — clínica odontológica premium, Chapecó/SC (implantes e facetas)
     - `ludik/` — marca de cosméticos masculinos para barbearias
   - `Meus Clientes/` — clientes próprios (fora de agência)
     - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`

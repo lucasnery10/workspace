@@ -34,6 +34,15 @@ clientes:
 
   # -- Suas contas abaixo --
 
+  arcari-odontologia:
+    nome: "Arcari Odontologia"
+    conta_anuncio: "act_1331332831454865"
+    pagina_facebook: "657597511053194"
+    instagram_id: "17841477679710076"
+    instagram_username: "@arcariodontologia"
+    moeda: "BRL"
+    notas: "Clínica odontológica premium em Chapecó/SC. Implantes, facetas e clareamento. Cliente da Create."
+
   ludik:
     nome: "Ludik"
     conta_anuncio: "act_941445191807062"

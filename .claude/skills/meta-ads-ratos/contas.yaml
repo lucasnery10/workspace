@@ -34,6 +34,15 @@ clientes:
 
   # -- Suas contas abaixo --
 
+  ludik:
+    nome: "Ludik"
+    conta_anuncio: "act_941445191807062"
+    pagina_facebook: "1035100256356295"
+    instagram_id: "17841477564089300"
+    instagram_username: "@ludik_supply"
+    moeda: "BRL"
+    notas: "Marca de cosméticos masculinos para barbearias. Cliente da Create. Contato: Alvaro."
+
   sorria-mais:
     nome: "Sorria Mais"
     conta_anuncio: "act_357696086707710"

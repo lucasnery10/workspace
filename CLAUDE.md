@@ -20,6 +20,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `rama-odontologia/` — clínica odontológica, Chapecó/SC (implantes, facetas, clareamento)
     - `valente-barber/` — barbearia + curso de barbeiro, Videira/SC
     - `ludik/` — marca de cosméticos masculinos para barbearias
+    - `ancoras-tattoo/` — estúdio de tatuagem e piercing premium, Cascavel/PR
   - `Meus Clientes/` — clientes próprios (fora de agência)
     - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`
 - `conteudo/` — produção de roteiros, copys e estratégias

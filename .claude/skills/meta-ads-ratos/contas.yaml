@@ -170,3 +170,12 @@ clientes:
     instagram_username: "@condacacaushow"
     moeda: "BRL"
     notas: "Loja física Cacau Show em Chapecó/SC. Razão social: Conda Chocolates LTDA. Proprietária: Aline Bavaresco. Também gere Usaflex (mesma proprietária)."
+
+  usaflex:
+    nome: "Usaflex Chapecó"
+    conta_anuncio: "act_1102201038366227"
+    pagina_facebook: "400326726497133"
+    instagram_id: "17841468249215128"
+    instagram_username: "@usaflexchapeco"
+    moeda: "BRL"
+    notas: "Loja física Usaflex em Chapecó/SC. Calçados, bolsas e acessórios femininos. Proprietária: Aline Bavaresco (mesma dona da Cacau Show). Cliente da Create."

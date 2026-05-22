@@ -23,6 +23,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `ancoras-tattoo/` — estúdio de tatuagem e piercing premium, Cascavel/PR
     - `comel-construcoes/` — engenharia civil e construção, obras residenciais completas
     - `cacau-show/` — loja física Cacau Show, chocolates e presentes, Chapecó/SC
+    - `usaflex/` — loja física Usaflex, calçados e bolsas femininos, Chapecó/SC
   - `Meus Clientes/` — clientes próprios (fora de agência)
     - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`
 - `conteudo/` — produção de roteiros, copys e estratégias

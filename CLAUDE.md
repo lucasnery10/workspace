@@ -22,8 +22,9 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `ludik/` — marca de cosméticos masculinos para barbearias
     - `ancoras-tattoo/` — estúdio de tatuagem e piercing premium, Cascavel/PR
     - `comel-construcoes/` — engenharia civil e construção, obras residenciais completas
+    - `cacau-show/` — loja física Cacau Show, chocolates e presentes, Chapecó/SC
   - `Meus Clientes/` — clientes próprios (fora de agência)
-    - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`, `cacau-show/`
+    - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`
 - `conteudo/` — produção de roteiros, copys e estratégias
 - `marca/` — identidade visual (design-guide.md, logo e assets de marca)
 - `templates/` — modelos reutilizáveis

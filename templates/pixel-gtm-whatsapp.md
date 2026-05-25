@@ -2,7 +2,7 @@
 
 Guia completo para instalar o Meta Pixel via Google Tag Manager em sites WordPress e configurar o rastreamento de cliques no WhatsApp como evento de conversão.
 
-Usado com: José Prestes, Nicolli Turqueti, Explore Milão.
+Usado com: José Prestes, Nicolli Turqueti, Explore Milão, Okta Filmes (Edu + Okta).
 
 ---
 
@@ -74,7 +74,7 @@ GTM → **Variáveis → Nova → JavaScript personalizado**
 function() {
   var el = {{Click Element}};
   while (el) {
-    if (el.tagName === 'A' && el.href && el.href.indexOf('wa.me') !== -1) {
+    if (el.tagName === 'A' && el.href && (el.href.indexOf('wa.me') !== -1 || el.href.indexOf('whatsapp.com') !== -1)) {
       return true;
     }
     el = el.parentElement;
@@ -83,7 +83,9 @@ function() {
 }
 ```
 
-Essa variável percorre todos os elementos pai do elemento clicado e verifica se algum é um link `<a>` apontando para `wa.me`. Funciona independente de classe CSS ou estrutura do site.
+Essa variável percorre todos os elementos pai do elemento clicado e verifica se algum é um link `<a>` apontando para `wa.me` ou `api.whatsapp.com`. Funciona independente de classe CSS ou estrutura do site.
+
+**Atenção:** alguns sites usam `api.whatsapp.com/send/` no lugar de `wa.me` — o código acima já cobre os dois formatos. Sempre inspecionar o botão antes de configurar.
 
 ### Passo 3 — Criar o acionador
 GTM → **Acionadores → Novo**
@@ -161,11 +163,57 @@ Se o evento não aparecer imediatamente após a confirmação, aguarda mais 15-3
 
 ---
 
+## COMPORTAMENTOS ESPECÍFICOS POR PLUGIN
+
+### Elementor (botão de WhatsApp)
+O Elementor não usa `<a>` tag padrão para os botões — ele empurra um evento personalizado para o dataLayer chamado `Compartilhe no WhatsApp`. A variável JS não captura esse caso.
+
+**Acionador correto:**
+- Tipo: **Evento personalizado**
+- Nome do evento: `Compartilhe no WhatsApp`
+- Disparado em: **Todos os eventos personalizados**
+- Sem condições adicionais
+
+Confirmar o nome exato do evento no GTM Preview antes de configurar — pode variar conforme versão do plugin.
+
+---
+
+### JoinChat (botão flutuante de WhatsApp)
+O JoinChat é um plugin WordPress popular de botão flutuante. Ele usa um `<div role="button">`, não um `<a>` tag — a variável JS não funciona.
+
+O JoinChat empurra o evento `JoinChat` para o dataLayer ao ser clicado.
+
+**Acionador correto:**
+- Tipo: **Evento personalizado**
+- Nome do evento: `JoinChat`
+- Disparado em: **Todos os eventos personalizados**
+- Sem condições adicionais
+
+---
+
+### Elementor (formulário)
+Formulários do Elementor usam Ajax — a página não recarrega ao enviar. Isso causa dois comportamentos específicos:
+
+1. O evento `form_submit` dispara **duas vezes** no dataLayer (não usar como trigger)
+2. O trigger "Envio de formulário" com **"Verificar validação" ativado não funciona** — o Elementor valida via JavaScript, não via HTML5 padrão, então o GTM não consegue confirmar a validação
+
+**Acionador correto para formulários Elementor:**
+- Tipo: **Envio de formulário**
+- **Desmarcar "Verificar validação"**
+- Disparado em: **Todos os formulários**
+- Condição obrigatória para salvar: `Page URL` — `contém` — `[domínio do site]`
+
+---
+
 ## PROBLEMAS COMUNS
 
 | Problema | Causa | Solução |
 |---|---|---|
-| Tag não dispara | Botões não usam `wa.me` | Inspecionar o href dos botões e ajustar a variável JS |
+| Tag não dispara — botão Elementor | Evento é `Compartilhe no WhatsApp`, não clique em link | Usar acionador "Evento personalizado" com esse nome |
+| Tag não dispara — botão JoinChat | Botão é `<div>`, não `<a>` | Usar acionador "Evento personalizado" com `JoinChat` |
+| Tag não dispara | Botões usam `api.whatsapp.com` em vez de `wa.me` | Variável JS já cobre os dois — verificar se está atualizada |
+| `form_submit` dispara 2x | Elementor tem dois listeners no mesmo evento | Usar "Envio de formulário" sem "Verificar validação" |
+| "Envio de formulário" não dispara | "Verificar validação" ativado com Elementor | Desmarcar "Verificar validação" |
 | `fbevents.js` bloqueado | CSP no WPCode | Remover meta tag CSP do WPCode |
 | Pixel duplicado | Pixel no HTML + pixel no GTM | Pausar tag do Pixel no GTM ou remover do HTML |
 | Evento não aparece no Events Manager | Ad blocker ativo | Usar aba anônima para testar |

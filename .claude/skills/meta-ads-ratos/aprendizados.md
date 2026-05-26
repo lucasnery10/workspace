@@ -19,3 +19,11 @@ Regras aprendidas durante o uso. O Claude DEVE ler este arquivo antes de criar q
 ### 2026-04-03 — Desligar format options em carrosséis
 **Regra:** Ao criar ads de carrossel, SEMPRE passar --degrees-of-freedom-spec com OPT_OUT pra carousel_to_video, image_touchups e standard_enhancements.
 **Contexto:** "Blocos de coleção" e "mídia única" distorcem o carrossel sequencial. Desligar pra manter ordem dos slides.
+
+### 2026-05-26 — Objetivo de campanha para WhatsApp: OUTCOME_SALES > OUTCOME_ENGAGEMENT
+**Regra:** Para campanhas com objetivo real de conversas no WhatsApp, usar OUTCOME_SALES com otimização CONVERSATIONS. Nunca usar OUTCOME_ENGAGEMENT pra esse fim — o sinal fica sujo (Meta tenta maximizar engajamento de post junto com conversas).
+**Contexto:** C07 das Lojas Piana usava OUTCOME_ENGAGEMENT + CONVERSATIONS. 1.694 engajamentos de post vs apenas 23 conversas — taxa de conversão de engajamento para conversa de 1,36%. Objetivo desalinhado dilui o sinal de otimização.
+
+### 2026-05-26 — CBO pode travar orçamento no criativo errado
+**Regra:** Em ad sets com CBO e múltiplos criativos, monitorar distribuição de gasto nas primeiras 72h. Se um criativo dominar >60% do orçamento com CTR abaixo da média dos outros, pausá-lo e forçar redistribuição.
+**Contexto:** AdSet 01 da C07 (Lojas Piana): ADS 6 consumiu 74% do gasto com CTR 1,47%, enquanto ADS 5 (CTR 3,20%) e ADS 4 (CTR 2,51%) mal saíram do lugar. Pausar ADS 6 e ADS 8 redistribuiu orçamento para os criativos mais eficientes.

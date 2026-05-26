@@ -171,6 +171,15 @@ clientes:
     moeda: "BRL"
     notas: "Loja física Cacau Show em Chapecó/SC. Razão social: Conda Chocolates LTDA. Proprietária: Aline Bavaresco. Também gere Usaflex (mesma proprietária)."
 
+  pizzaria-papa-leone:
+    nome: "Pizzaria Papa Leone"
+    conta_anuncio: "act_1705476200072742"
+    pagina_facebook: "109650962155846"
+    instagram_id: "17841449835085149"
+    instagram_username: "@pizzariapapaleone"
+    moeda: "BRL"
+    notas: "Pizzaria food service em Chapecó/SC. Contato: Willian Fontanela. Investimento: R$3.500 Meta + R$700 Google. Cliente do Grupo TR."
+
   usaflex:
     nome: "Usaflex Chapecó"
     conta_anuncio: "act_1102201038366227"

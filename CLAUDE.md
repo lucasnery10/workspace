@@ -27,6 +27,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
   - `Meus Clientes/` — clientes próprios (fora de agência)
     - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`
 - `conteudo/` — produção de roteiros, copys e estratégias
+- `tarefas.md` — controle de pendências operacionais (MCPs a instalar, tarefas por cliente)
 
 - `templates/` — modelos reutilizáveis
 - `dados/` — arquivos para análise (CSV, PDF, relatórios de plataforma)

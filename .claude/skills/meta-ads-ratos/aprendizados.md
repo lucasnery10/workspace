@@ -35,3 +35,11 @@ Regras aprendidas durante o uso. O Claude DEVE ler este arquivo antes de criar q
 ### 2026-05-26 — CBO pode travar orçamento no criativo errado
 **Regra:** Em ad sets com CBO e múltiplos criativos, monitorar distribuição de gasto nas primeiras 72h. Se um criativo dominar >60% do orçamento com CTR abaixo da média dos outros, pausá-lo e forçar redistribuição.
 **Contexto:** AdSet 01 da C07 (Lojas Piana): ADS 6 consumiu 74% do gasto com CTR 1,47%, enquanto ADS 5 (CTR 3,20%) e ADS 4 (CTR 2,51%) mal saíram do lugar. Pausar ADS 6 e ADS 8 redistribuiu orçamento para os criativos mais eficientes.
+
+### 2026-05-26 — Criativo de vídeo exige thumbnail (image_url ou image_hash)
+**Regra:** Ao criar criativos com `video_data` em `object_story_spec`, SEMPRE incluir `image_url` ou `image_hash` no `video_data`. Sem eles, a API retorna erro 100 subcode 1443226 ("Seu anúncio precisa de uma miniatura de vídeo"). Para obter a thumbnail automaticamente: após o upload, buscar `picture` do vídeo com `AdVideo(id).api_get(fields=['picture'])` e usar o valor como `image_url`.
+**Contexto:** Valente Barber — criação de ADS 9-12 falhou na primeira tentativa por falta de thumbnail. Solução: buscar `picture` de cada vídeo logo após o upload e incluir no criativo.
+
+### 2026-05-26 — Upload de vídeo local: usar upload_local_video.py
+**Regra:** O `create.py video` só aceita `--url` (URL pública). Para arquivos locais (.mp4, .mov, etc.), usar `scripts/upload_local_video.py --account act_XXX --file /caminho/do/video.mp4 --name "Nome"`. O script usa `AdVideo(parent_id).remote_create()` com `filepath`. Retorna o `video_id` que deve ser usado na criação do criativo.
+**Contexto:** Valente Barber — vídeos em `/Downloads/` não podiam ser enviados via URL. Script criado em 2026-05-26.

@@ -43,3 +43,27 @@ Regras aprendidas durante o uso. O Claude DEVE ler este arquivo antes de criar q
 ### 2026-05-26 — Upload de vídeo local: usar upload_local_video.py
 **Regra:** O `create.py video` só aceita `--url` (URL pública). Para arquivos locais (.mp4, .mov, etc.), usar `scripts/upload_local_video.py --account act_XXX --file /caminho/do/video.mp4 --name "Nome"`. O script usa `AdVideo(parent_id).remote_create()` com `filepath`. Retorna o `video_id` que deve ser usado na criação do criativo.
 **Contexto:** Valente Barber — vídeos em `/Downloads/` não podiam ser enviados via URL. Script criado em 2026-05-26.
+
+### 2026-05-27 — Fluxo padrão de renovação de vídeos (substituir criativos em conjunto existente)
+**Regra:** Quando o cliente envia novos vídeos para substituir criativos ativos, seguir este fluxo:
+1. Ler os ads do conjunto: `read.py ads-by-adset --adset ID`
+2. Ler o criativo de um ad para pegar `asset_feed_spec` completo (3 textos + 5 headlines): `read.py creative --id ID --fields "id,asset_feed_spec,object_story_spec,body,title,call_to_action_type"`
+3. Fazer upload de cada vídeo: `upload_local_video.py --account act_XXX --file /caminho.MOV --name "Nome"`
+4. Buscar thumbnail de cada vídeo: `AdVideo(id).api_get(fields=['picture'])` — se retornar `rsrc.php` (GIF de loading), aguardar com loop `until` antes de continuar
+5. Criar criativo com `object_story_spec` (page_id, instagram_user_id, video_data com video_id + image_url + CTA + page_welcome_message) + `asset_feed_spec` (bodies + titles + optimization_type)
+6. Criar ad com `status: PAUSED` e `degrees_of_freedom_spec: {creative_features_spec: {standard_enhancements: {enroll_status: OPT_OUT}}}`
+7. Ativar novos ads; pausar os antigos se for substituição completa
+**Contexto:** Usado em Valente Barber (ADS 9-12 na C03 e ADS 4-6 na C04) em 2026-05-27. Padrão replicável para qualquer cliente.
+
+### 2026-05-27 — duplicate-adset NÃO copia os ads do conjunto
+**Regra:** `advanced.py duplicate-adset` copia apenas a estrutura do ad set (targeting, budget, optimization_goal, etc.). Os ads dentro do conjunto original NÃO são copiados. Após duplicar, criar os ads manualmente no novo conjunto com os criativos desejados.
+**Contexto:** Valente Barber C04 — conjunto "04" duplicado para "4.1". Os ads ADS 1, 2, 3 permaneceram no conjunto original; ADS 4, 5, 6 foram criados do zero no conjunto 4.1 com os novos vídeos.
+
+### 2026-05-27 — Fluxo para duplicar conjunto e trocar público + vídeos
+**Regra:** Quando precisar criar variação de conjunto com público diferente e novos criativos:
+1. `advanced.py duplicate-adset --id ID --name "novo nome"` → retorna novo adset_id
+2. `update.py adset --id NOVO_ID --targeting '{...}'` com os novos parâmetros de público (genders, age_min, age_max, geo)
+3. Seguir o fluxo padrão de renovação de vídeos (ver regra acima) para criar os ads no novo conjunto
+4. Ativar o conjunto: `update.py adset --id NOVO_ID --status ACTIVE`
+O conjunto original permanece intacto e ativo.
+**Contexto:** Valente Barber C04 — conjunto "04" (feminino, 27-60) duplicado para "4.1" (ambos, 25-55) com 3 novos criativos de vídeo.

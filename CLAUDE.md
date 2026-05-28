@@ -71,6 +71,7 @@ Evitar: abstrações desnecessárias, explicações longas sem aplicação prát
 - `meta-ads-ratos` — gestão completa de campanhas via SDK (leitura, criação, insights, duplicação)
 - `google-ads-ratos` — gestão completa de Google Ads via SDK (leitura, criação, insights, GAQL)
 - `ads-ratos` — diagnóstico, relatório, auditoria e estratégia com benchmarks brasileiros e Health Score (global)
+- `copy-meta` — cria 3 textos principais e 5 headlines para anúncios no Meta Ads com base em briefing e asset
 
 ---
 

@@ -67,6 +67,14 @@ Regras aprendidas durante o uso. O Claude DEVE ler este arquivo antes de criar q
 **Regra:** No `asset_feed_spec` com `asset_customization_rules`, NUNCA usar o mesmo hash de imagem em dois itens do array `images`. A API retorna erro 100 subcode 1815629 ("Valor duplicado"). Solução: usar apenas 2 regras de placement quando há só 2 imagens distintas (story e feed) — regra 1: story/reels, regra 2: fallback (customization_spec vazio).
 **Contexto:** Arcari Odontologia — tentativa de usar feed hash como feed + fallback causou erro. Solução: eliminar regra de fallback redundante ou usar imagem diferente para cada regra.
 
+### 2026-05-28 — Detectar formato de imagem pela proporção, não pelo nome do arquivo
+**Regra:** Nunca assumir qual imagem é feed e qual é story pelo nome do arquivo (ex: "7" = feed, "7.1" = story não é um padrão garantido). SEMPRE verificar as dimensões reais de cada arquivo antes de criar o criativo. Imagem com proporção 9:16 (altura > largura) → story/reels. Imagem com proporção 4:5, 1:1 ou paisagem → feed. Usar `python3 -c "from PIL import Image; img=Image.open('/path'); print(img.size)"` ou equivalente para checar antes de montar o asset_feed_spec.
+**Contexto:** Arcari Odontologia — ADS 7 e ADS 8 de facetas foram criados com feed e story trocados. Usuário corrigiu manualmente. A origem do erro foi assumir padrão de nomenclatura que não é fixo.
+
+### 2026-05-28 — Criar ads sempre PAUSED, ativar somente com comando explícito
+**Regra:** SEMPRE criar ads com `status: PAUSED`. Nunca ativar ads automaticamente após a criação — aguardar comando explícito do usuário ("pode ativar", "publica", "deixa ativo"). Só após a confirmação do usuário ativar: adset → ads, nessa ordem.
+**Contexto:** Fluxo definido pelo usuário em 2026-05-28. O usuário precisa revisar os criativos antes de publicar para garantir que tudo está correto.
+
 ### 2026-05-28 — Fluxo completo para criar anúncio estático com placement feed+story
 **Regra:** Para criar 1 ad estático com versão feed (4:5 ou 1:1) e story (9:16), usar `asset_feed_spec` com `optimization_type: "PLACEMENT"` e 2 `asset_customization_rules`:
 1. Upload imagens com `upload_local_image.py` → obter hash de cada versão

@@ -26,7 +26,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `cacau-show/` — loja física Cacau Show, chocolates e presentes, Chapecó/SC
     - `usaflex/` — loja física Usaflex, calçados e bolsas femininos, Chapecó/SC
   - `Meus Clientes/` — clientes próprios (fora de agência)
-    - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`
+    - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`, `fabricio-revest-decor/`
 - `conteudo/` — produção de roteiros, copys e estratégias
 - `tarefas.md` — controle de pendências operacionais (MCPs a instalar, tarefas por cliente)
 

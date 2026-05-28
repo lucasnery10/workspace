@@ -59,6 +59,22 @@ Regras aprendidas durante o uso. O Claude DEVE ler este arquivo antes de criar q
 **Regra:** `advanced.py duplicate-adset` copia apenas a estrutura do ad set (targeting, budget, optimization_goal, etc.). Os ads dentro do conjunto original NÃO são copiados. Após duplicar, criar os ads manualmente no novo conjunto com os criativos desejados.
 **Contexto:** Valente Barber C04 — conjunto "04" duplicado para "4.1". Os ads ADS 1, 2, 3 permaneceram no conjunto original; ADS 4, 5, 6 foram criados do zero no conjunto 4.1 com os novos vídeos.
 
+### 2026-05-28 — Upload de imagem local: usar upload_local_image.py
+**Regra:** O `create.py image` só aceita `--url` (URL pública). Para arquivos locais (.jpeg, .png, etc.), usar `scripts/upload_local_image.py --account act_XXX --file /caminho/da/imagem.jpeg --name "Nome"`. O script usa `AdImage(parent_id).remote_create()` com `filename`. Retorna o `hash` que deve ser usado na criação do criativo.
+**Contexto:** Arcari Odontologia — imagens estáticas de implantes (ADS 7, 7.1, 8, 8.1) em `/Downloads/`. Script criado em 2026-05-28.
+
+### 2026-05-28 — asset_customization_rules não aceita hash duplicado
+**Regra:** No `asset_feed_spec` com `asset_customization_rules`, NUNCA usar o mesmo hash de imagem em dois itens do array `images`. A API retorna erro 100 subcode 1815629 ("Valor duplicado"). Solução: usar apenas 2 regras de placement quando há só 2 imagens distintas (story e feed) — regra 1: story/reels, regra 2: fallback (customization_spec vazio).
+**Contexto:** Arcari Odontologia — tentativa de usar feed hash como feed + fallback causou erro. Solução: eliminar regra de fallback redundante ou usar imagem diferente para cada regra.
+
+### 2026-05-28 — Fluxo completo para criar anúncio estático com placement feed+story
+**Regra:** Para criar 1 ad estático com versão feed (4:5 ou 1:1) e story (9:16), usar `asset_feed_spec` com `optimization_type: "PLACEMENT"` e 2 `asset_customization_rules`:
+1. Upload imagens com `upload_local_image.py` → obter hash de cada versão
+2. Gerar labels únicos com `uuid.uuid4().hex[:12]` — usar prefixos `l_story_`, `l_feed_`, etc.
+3. Criar criativo com `object_story_spec` (page_id + instagram_user_id apenas) + `asset_feed_spec` (2 imagens com labels, bodies, titles, link_urls, customization_rules: story/reels → L_story, fallback `{}` → L_feed)
+4. Criar ad com `status: PAUSED` + `degrees_of_freedom_spec` OPT_OUT
+**Contexto:** Arcari Odontologia — ADS 7 e ADS 8 criados em 2026-05-28. Cada ad usa imagem feed (7.jpeg) para todos os posicionamentos exceto story/reels, que usa a versão 7.1.jpeg.
+
 ### 2026-05-27 — Fluxo para duplicar conjunto e trocar público + vídeos
 **Regra:** Quando precisar criar variação de conjunto com público diferente e novos criativos:
 1. `advanced.py duplicate-adset --id ID --name "novo nome"` → retorna novo adset_id

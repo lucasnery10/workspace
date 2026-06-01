@@ -14,6 +14,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `jose-prestes/`
     - `okta-filmes/` — produtora audiovisual, Florianópolis/SC (Google Ads ativo)
     - `pizzaria-papa-leone/` — pizzaria food service, Chapecó/SC (Meta Ads + Google Ads)
+    - `walter-matos/` — fotografia de casamento documental, Aracaju/SE (Meta Ads)
   - `Create/` — clientes da agência Create
     - `sorria-mais/` — clínica odontológica, Joaçaba/SC (implantes e facetas)
     - `arcari-odontologia/` — clínica odontológica premium, Chapecó/SC (implantes e facetas)

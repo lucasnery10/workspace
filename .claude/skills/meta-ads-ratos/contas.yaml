@@ -180,6 +180,15 @@ clientes:
     moeda: "BRL"
     notas: "Pizzaria food service em Chapecó/SC. Contato: Willian Fontanela. Investimento: R$4.500 Meta + R$700 Google. Cliente do Grupo TR."
 
+  walter-matos:
+    nome: "Walter Matos Fotografia"
+    conta_anuncio: "act_341709522228065"
+    pagina_facebook: "224145430793140"
+    instagram_id: "17841457276103363"
+    instagram_username: "@fotosporwalter"
+    moeda: "BRL"
+    notas: "Fotografia de casamento documental em Aracaju/SE. Ticket médio R$3k. Investimento: R$700/mês Meta. Cliente do Grupo TR."
+
   usaflex:
     nome: "Usaflex Chapecó"
     conta_anuncio: "act_1102201038366227"

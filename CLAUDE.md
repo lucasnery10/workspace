@@ -63,6 +63,8 @@ Evitar: abstrações desnecessárias, explicações longas sem aplicação prát
 - [x] Google Ads (skill google-ads-ratos — SDK google-ads, OAuth configurado em 19/05/2026, token renovado em 03/06/2026)
 - [ ] Google Drive
 - [ ] WhatsApp
+- [ ] Gmail
+- [ ] Google Calendar
 
 *(Marcar conforme for instalando os MCPs)*
 

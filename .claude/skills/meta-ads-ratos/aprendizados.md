@@ -4,6 +4,18 @@ Regras aprendidas durante o uso. O Claude DEVE ler este arquivo antes de criar q
 
 ---
 
+### 2026-06-03 — asset_feed_spec REGULAR exige adset com is_dynamic_creative=true
+**Regra:** Para usar `asset_feed_spec` com `optimization_type: REGULAR` (DCO com múltiplos textos/títulos), o adset DEVE ter sido criado com `is_dynamic_creative: true`. Adsets existentes sem essa flag retornam erro 100 subcode 1885553 ao criar o ad. Não há como ativar retroativamente. Para adsets existentes sem DCO, usar criativo simples (single body + title no object_story_spec). O `optimization_type: "CREATIVE"` é inválido — os valores aceitos são: REGULAR, LANGUAGE, PLACEMENT, BRAND, LOCALIZED_PLACEMENTS, FORMAT_AUTOMATION, DOF_MESSAGING_DESTINATION, ACO_AUTOFLOW, MULTI_CREATOR, UNIFIED_PROFILE_VISIT_DESTINATION.
+**Contexto:** Papa Leone JUN/2026 — tentativa de criar criativos DCO com 3 textos + 5 headlines falhou nos adsets existentes. Solução: criativo simples com texto principal e headline primária.
+
+---
+
+### 2026-06-03 — Nomenclatura de ads Papa Leone — promoções especiais
+**Regra:** Ads de promoção/campanha especial (Happy Hour, promoção semanal, etc.) devem seguir o padrão: `ADS XX - VID - [MÊS] - (promoção [dia])`. Ex: `ADS XX - VID - JUN - (promoção terça)`. Usar "XX" no lugar do número sequencial quando o ad é uma promoção fora da sequência regular de criativos.
+**Contexto:** Papa Leone — ads de Happy Hour 10% off criados em JUN/2026. Nomenclatura corrigida pelo usuário após criação.
+
+---
+
 ### 2026-04-03 — Sempre incluir CTA no criativo
 **Regra:** Ao criar criativos (create.py creative), SEMPRE incluir call_to_action_type. Padrão: LEARN_MORE pra tráfego, SIGN_UP pra leads, SHOP_NOW pra vendas. Nunca criar criativo sem CTA.
 **Contexto:** Criou carrossel sem botão de CTA. Usuário teve que corrigir manualmente.

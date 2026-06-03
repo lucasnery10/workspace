@@ -95,6 +95,10 @@ Regras aprendidas durante o uso. O Claude DEVE ler este arquivo antes de criar q
 **Regra:** Remover `standard_enhancements` do `creative_features_spec` no `degrees_of_freedom_spec`. O campo foi descontinuado e retorna erro 100 subcode 3858504 ao criar criativos. Definir apenas os recursos individuais (advantage_plus_creative, cv_transformation, enhance_cta, image_touchups, etc.).
 **Contexto:** Sorria Mais — todos os criativos novos falhavam com esse campo presente.
 
+### 2026-06-03 — Nome do ad estático usa só o número base, sem o .1
+**Regra:** Ao nomear ads estáticos com feed + story (ex: ADS 4 feed + ADS 4.1 story), o nome do ad deve ser apenas o número base: "ADS 4 - EST - JUN - IMPLANTES". Não usar "ADS 4+4.1" nem "ADS 4.1". Isso vale para qualquer conta e qualquer campanha.
+**Contexto:** Definido pelo usuário em 2026-06-03 após subida da Sorria Mais.
+
 ### 2026-06-03 — asset_feed_spec PLACEMENT exige ad_formats e labels em bodies/titles/link_urls
 **Regra:** No `asset_feed_spec` com `optimization_type: PLACEMENT` e `asset_customization_rules`:
 1. Incluir `"ad_formats": ["AUTOMATIC_FORMAT"]` (sem isso: erro 1885374)

@@ -60,7 +60,7 @@ Evitar: abstrações desnecessárias, explicações longas sem aplicação prát
 ## Ferramentas conectadas
 
 - [x] Meta Ads (skill meta-ads-ratos — SDK facebook-business, token válido até 17/07/2026)
-- [x] Google Ads (skill google-ads-ratos — SDK google-ads, OAuth configurado em 19/05/2026)
+- [x] Google Ads (skill google-ads-ratos — SDK google-ads, OAuth configurado em 19/05/2026, token renovado em 03/06/2026)
 - [ ] Google Drive
 - [ ] WhatsApp
 

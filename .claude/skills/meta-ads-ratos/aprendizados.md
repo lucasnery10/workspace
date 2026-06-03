@@ -83,6 +83,26 @@ Regras aprendidas durante o uso. O Claude DEVE ler este arquivo antes de criar q
 4. Criar ad com `status: PAUSED` + `degrees_of_freedom_spec` OPT_OUT
 **Contexto:** Arcari Odontologia — ADS 7 e ADS 8 criados em 2026-05-28. Cada ad usa imagem feed (7.jpeg) para todos os posicionamentos exceto story/reels, que usa a versão 7.1.jpeg.
 
+### 2026-06-03 — Criar campanha OUTCOME_SALES requer is_adset_budget_sharing_enabled
+**Regra:** Ao criar campanha com `OUTCOME_SALES` via API, SEMPRE incluir `is_adset_budget_sharing_enabled: False` (ABO) ou `True` (CBO). Sem esse campo a API retorna erro 100 subcode 4834011.
+**Contexto:** Sorria Mais — duplicate-campaign e create_campaign falhavam com esse erro. Solução: adicionar o campo na criação.
+
+### 2026-06-03 — Criar adset WhatsApp requer promoted_object com page_id
+**Regra:** Ao criar adset com `destination_type: WHATSAPP`, SEMPRE incluir `promoted_object: {"page_id": "PAGE_ID"}`. Sem isso retorna erro 100 subcode 1815807.
+**Contexto:** Sorria Mais — adset de facetas falhava sem o promoted_object.
+
+### 2026-06-03 — degrees_of_freedom_spec: standard_enhancements foi descontinuado
+**Regra:** Remover `standard_enhancements` do `creative_features_spec` no `degrees_of_freedom_spec`. O campo foi descontinuado e retorna erro 100 subcode 3858504 ao criar criativos. Definir apenas os recursos individuais (advantage_plus_creative, cv_transformation, enhance_cta, image_touchups, etc.).
+**Contexto:** Sorria Mais — todos os criativos novos falhavam com esse campo presente.
+
+### 2026-06-03 — asset_feed_spec PLACEMENT exige ad_formats e labels em bodies/titles/link_urls
+**Regra:** No `asset_feed_spec` com `optimization_type: PLACEMENT` e `asset_customization_rules`:
+1. Incluir `"ad_formats": ["AUTOMATIC_FORMAT"]` (sem isso: erro 1885374)
+2. Cada body, title e link_url DEVE ter `adlabels` com um label compartilhado
+3. Cada `asset_customization_rule` DEVE incluir `body_label`, `title_label` e `link_url_label` além do `image_label`
+4. Ambas as regras (story + fallback) podem referenciar os MESMOS labels de body/title/link_url
+**Contexto:** Sorria Mais — erros 1885374, 1885878 ao criar estáticos com story+feed. Solução usada com sucesso em 2026-06-03.
+
 ### 2026-05-27 — Fluxo para duplicar conjunto e trocar público + vídeos
 **Regra:** Quando precisar criar variação de conjunto com público diferente e novos criativos:
 1. `advanced.py duplicate-adset --id ID --name "novo nome"` → retorna novo adset_id

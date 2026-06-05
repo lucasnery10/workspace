@@ -189,6 +189,15 @@ clientes:
     moeda: "BRL"
     notas: "Fotografia de casamento documental em Aracaju/SE. Ticket médio R$3k. Investimento: R$700/mês Meta. Cliente do Grupo TR."
 
+  eduardo-embraed:
+    nome: "Eduardo Embraed"
+    conta_anuncio: "act_2059433891450244"
+    pagina_facebook: "100794052552891"
+    instagram_id: "17841403212334058"
+    instagram_username: "@eduardoebertz"
+    moeda: "BRL"
+    notas: "Corretor de imóveis da Embraed, Balneário Camboriú/SC. Empreendimentos de alto padrão (R$3,5M a R$50M). Primeiro investimento em tráfego pago. Budget: R$1.000 a R$1.500/mês. Meu cliente."
+
   usaflex:
     nome: "Usaflex Chapecó"
     conta_anuncio: "act_1102201038366227"

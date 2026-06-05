@@ -151,6 +151,21 @@ Mostrar o que vai mudar antes de salvar. Não reformatar o arquivo inteiro, só 
 
 ---
 
+## Onboarding de novo cliente — IDs Meta Ads
+
+Ao concluir o `/novo-projeto` para um cliente, sempre enviar esta mensagem exatamente assim (sem nenhum texto adicional):
+
+```
+ID da conta: 
+ID da página: 
+ID do instagram: 
+@ do instagram: 
+```
+
+O usuário vai copiar e mandar pro cliente. Quando os dados voltarem, cadastrar no `contas.yaml` da skill meta-ads-ratos e atualizar o `CLAUDE.md` do cliente.
+
+---
+
 ## Criação de skills
 
 Quando o usuário pedir pra criar uma nova skill:

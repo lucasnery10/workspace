@@ -119,7 +119,19 @@ Regras aprendidas durante o uso. O Claude DEVE ler este arquivo antes de criar q
 4. Ambas as regras (story + fallback) podem referenciar os MESMOS labels de body/title/link_url
 **Contexto:** Sorria Mais — erros 1885374, 1885878 ao criar estáticos com story+feed. Solução usada com sucesso em 2026-06-03.
 
-### 2026-05-27 — Fluxo para duplicar conjunto e trocar público + vídeos
+### 2026-06-08 — OUTCOME_SALES + CONVERSATIONS exige bid_strategy explícito no adset
+**Regra:** Ao criar adset com `optimization_goal: CONVERSATIONS` dentro de campanha `OUTCOME_SALES`, SEMPRE incluir `bid_strategy: LOWEST_COST_WITHOUT_CAP`. Sem esse campo a API retorna erro 100 subcode 2490487 ("valor ou restrições de lance obrigatórios").
+**Contexto:** Lojas Piana C08 — adset de Dia dos Namorados falhava sem o bid_strategy. Solução: adicionar o campo explicitamente.
+
+---
+
+### 2026-06-08 — asset_feed_spec REGULAR com vídeo exige vídeo referenciado no feed spec
+**Regra:** Ao criar criativo com `asset_feed_spec` + `optimization_type: REGULAR` e vídeo, o vídeo DEVE aparecer no próprio `asset_feed_spec` (dentro de `videos` ou similar), além do `object_story_spec`. Referenciar apenas no `object_story_spec` retorna erro 1885373 ("É necessário pelo menos 1 images or videos para o formato AUTOMATIC_FORMAT").
+**Contexto:** Lojas Piana C08 — tentativa de criar criativo DCO com 3 textos + 5 headlines + vídeo falhou. O vídeo estava só no object_story_spec, não no asset_feed_spec.
+
+---
+
+### 2026-06-08 — Fluxo para duplicar conjunto e trocar público + vídeos
 **Regra:** Quando precisar criar variação de conjunto com público diferente e novos criativos:
 1. `advanced.py duplicate-adset --id ID --name "novo nome"` → retorna novo adset_id
 2. `update.py adset --id NOVO_ID --targeting '{...}'` com os novos parâmetros de público (genders, age_min, age_max, geo)

@@ -4,6 +4,14 @@ Regras aprendidas durante o uso. O Claude DEVE ler este arquivo antes de criar q
 
 ---
 
+### 2026-06-08 — OUTCOME_SALES não suporta Dynamic Creative (is_dynamic_creative)
+**Regra:** Nunca criar adset com `is_dynamic_creative: true` em campanhas com objetivo OUTCOME_SALES. A API retorna erro 1885392 ("Objetivo incompatível com anúncios de criativo dinâmico") ao tentar criar o ad. Para testar múltiplas cópias, criar 3 ads separados (um por texto) no mesmo adset, cada um com criativo próprio.
+**Contexto:** Eduardo Embraed — campanha de vendas WhatsApp para Tonino Lamborghini. Solução adotada: 3 creatives + 3 ads com object_story_spec/video_data + CTA WHATSAPP_MESSAGE.
+
+### 2026-06-08 — Criativo de vídeo WhatsApp OUTCOME_SALES: usar object_story_spec com video_data
+**Regra:** Para campanhas OUTCOME_SALES com destino WhatsApp e vídeo, usar object_story_spec com video_data (video_id + image_url + message + title + call_to_action WHATSAPP_MESSAGE). Não usar asset_feed_spec com ad_formats para esse tipo de campanha — incompatível com OUTCOME_SALES. O instagram_user_id vai como campo top-level no criativo.
+**Contexto:** Eduardo Embraed — múltiplas tentativas com AUTOMATIC_FORMAT e SINGLE_VIDEO no asset_feed_spec falharam. O que funcionou foi object_story_spec simples com video_data.
+
 ### 2026-06-03 — asset_feed_spec REGULAR exige adset com is_dynamic_creative=true
 **Regra:** Para usar `asset_feed_spec` com `optimization_type: REGULAR` (DCO com múltiplos textos/títulos), o adset DEVE ter sido criado com `is_dynamic_creative: true`. Adsets existentes sem essa flag retornam erro 100 subcode 1885553 ao criar o ad. Não há como ativar retroativamente. Para adsets existentes sem DCO, usar criativo simples (single body + title no object_story_spec). O `optimization_type: "CREATIVE"` é inválido — os valores aceitos são: REGULAR, LANGUAGE, PLACEMENT, BRAND, LOCALIZED_PLACEMENTS, FORMAT_AUTOMATION, DOF_MESSAGING_DESTINATION, ACO_AUTOFLOW, MULTI_CREATOR, UNIFIED_PROFILE_VISIT_DESTINATION.
 **Contexto:** Papa Leone JUN/2026 — tentativa de criar criativos DCO com 3 textos + 5 headlines falhou nos adsets existentes. Solução: criativo simples com texto principal e headline primária.

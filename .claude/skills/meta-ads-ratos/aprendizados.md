@@ -131,6 +131,21 @@ Regras aprendidas durante o uso. O Claude DEVE ler este arquivo antes de criar q
 **Regra:** Ao criar adset com `optimization_goal: CONVERSATIONS` dentro de campanha `OUTCOME_SALES`, SEMPRE incluir `bid_strategy: LOWEST_COST_WITHOUT_CAP`. Sem esse campo a API retorna erro 100 subcode 2490487 ("valor ou restrições de lance obrigatórios").
 **Contexto:** Lojas Piana C08 — adset de Dia dos Namorados falhava sem o bid_strategy. Solução: adicionar o campo explicitamente.
 
+### 2026-06-09 — OUTCOME_SALES + WHATSAPP exige targeting_automation.advantage_audience
+**Regra:** Ao criar adset com `destination_type: WHATSAPP` em campanha OUTCOME_SALES, SEMPRE incluir `"targeting_automation": {"advantage_audience": 0}` (manual) ou `1` (automático) no targeting. Sem esse campo: erro 100 subcode 1870227 ("A sinalização de público Advantage é obrigatória").
+**Contexto:** Eduardo Embraed C01 — adset falhava após corrigir o bid_strategy. Segundo erro em sequência. Solução: adicionar o campo no targeting spec.
+
+### 2026-06-09 — OUTCOME_SALES é incompatível com DCO (is_dynamic_creative / asset_feed_spec)
+**Regra:** Campanhas OUTCOME_SALES NÃO suportam Dynamic Creative. Erro 1885392 ao criar ad com criativo que tem `asset_feed_spec`. Para múltiplos textos em OUTCOME_SALES: criar ads separados (um por texto) ou pedir ao cliente para adicionar variações manualmente no Ads Manager. Apenas OUTCOME_ENGAGEMENT e OUTCOME_LEADS suportam DCO nativamente via API.
+**Contexto:** Eduardo Embraed C01 — tentativa de criar 1 ad com 3 textos + 5 headlines bloqueada. Adset com is_dynamic_creative=true também é incompatível com OUTCOME_SALES.
+
+### 2026-06-09 — Nomenclatura padrão de campanhas, adsets e ads
+**Regra:** Seguir o padrão identificado nas contas dos clientes:
+- Campanha: `[C0N] [OBJETIVO] [MÊS] [ABO/CBO] [F] - Produto` → ex: `[C01] [VENDAS] [JUN] [ABO] [F] - Tonino Lamborghini`
+- AdSet: `0N - [FB/IG] [DESTINO] [REGIÕES] [IDADE+] [H/M]` → ex: `01 - [FB/IG] [WHATS] [PR+MT+MS+SC+SP] [25/65+] [H/M]`
+- Ad: `ADS N - VID/EST - MÊS - PRODUTO` → ex: `ADS 1 - VID - JUN - TONINO`
+**Contexto:** Padrão confirmado consultando campanhas da Sorria Mais e Matheus Grando em 2026-06-09.
+
 ---
 
 ### 2026-06-08 — asset_feed_spec REGULAR com vídeo exige vídeo referenciado no feed spec

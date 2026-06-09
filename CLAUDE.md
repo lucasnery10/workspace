@@ -28,7 +28,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `usaflex/` — loja física Usaflex, calçados e bolsas femininos, Chapecó/SC
   - `Meus Clientes/` — clientes próprios (fora de agência)
     - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`, `fabricio-revest-decor/`
-    - `eduardo-embraed/` — corretor de imóveis da Embraed, Balneário Camboriú/SC (onboarding)
+    - `eduardo-embraed/` — corretor de imóveis da Embraed, Balneário Camboriú/SC (Meta Ads ativo)
 - `conteudo/` — produção de roteiros, copys e estratégias
 - `tarefas.md` — controle de pendências operacionais (MCPs a instalar, tarefas por cliente)
 

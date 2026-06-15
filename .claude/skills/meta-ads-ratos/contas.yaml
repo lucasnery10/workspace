@@ -198,6 +198,15 @@ clientes:
     moeda: "BRL"
     notas: "Corretor de imóveis da Embraed, Balneário Camboriú/SC. Empreendimentos de alto padrão (R$3,5M a R$50M). Primeiro investimento em tráfego pago. Budget: R$1.000 a R$1.500/mês. Meu cliente."
 
+  barbearia-origem:
+    nome: "Barbearia Origem"
+    conta_anuncio: "act_937344520610271"
+    pagina_facebook: "101316692915411"
+    instagram_id: "17841445796156641"
+    instagram_username: "@barbearia_origem"
+    moeda: "BRL"
+    notas: "Barbearia. Cliente da Create."
+
   usaflex:
     nome: "Usaflex Chapecó"
     conta_anuncio: "act_1102201038366227"

@@ -4,6 +4,20 @@ Regras aprendidas durante o uso. O Claude DEVE ler este arquivo antes de criar q
 
 ---
 
+### 2026-06-17 — CBO: is_adset_budget_sharing_enabled=False + daily_budget na campanha
+**Regra:** Para criar campanha CBO (orçamento na campanha), usar `is_adset_budget_sharing_enabled: False` + `daily_budget` no nível da campanha + `bid_strategy: LOWEST_COST_WITHOUT_CAP` também na campanha. Adsets em CBO não levam daily_budget individual nem bid_strategy — só targeting, optimization_goal e billing_event. O aprendizado anterior dizia False=ABO, True=CBO, mas a API rejeita True com erro 4834002 quando há daily_budget na campanha.
+**Contexto:** Eduardo Embraed C02 — tentativa com True+daily_budget falhou (erro 4834002). Solução: False+daily_budget na campanha funcionou.
+
+### 2026-06-17 — Advantage+ Audience (advantage_audience=1) é incompatível com age_min > 25
+**Regra:** Nunca definir `age_min` maior que 25 em adsets com `targeting_automation: {advantage_audience: 1}`. A API retorna erro 1870188 com a mensagem: "Com conjuntos de anúncios que usam o público Advantage+, o controle de idade mínima do público não pode ser definido como mais de 25 anos." Se precisar testar faixa etária restrita, usar dois adsets separados: um com Advantage+ (age_min=25) e outro com targeting manual (age_min desejado, advantage_audience=0).
+**Contexto:** Eduardo Embraed C02 — tentativa de combinar age_min=35 + advantage_audience=1 falhou em todos os testes (criar e atualizar). Solução: C02 com 2 adsets — AS01 Advantage+/25-65 e AS02 manual/35-65.
+
+### 2026-06-17 — duplicate-campaign --deep falha em OUTCOME_SALES (erro 4834011)
+**Regra:** O comando `advanced.py duplicate-campaign --deep` não passa `is_adset_budget_sharing_enabled` e falha com erro 100/4834011 em campanhas OUTCOME_SALES. Não há forma de corrigir no script atual. Para duplicar campanha OUTCOME_SALES: criar campanha nova via Python inline com o parâmetro explícito, depois duplicar cada adset individualmente com `duplicate-adset --campaign ID_NOVA`.
+**Contexto:** Eduardo Embraed C02 — duplicate-campaign rejeitado. Workaround usado com sucesso.
+
+---
+
 ### 2026-06-08 — OUTCOME_SALES não suporta Dynamic Creative (is_dynamic_creative)
 **Regra:** Nunca criar adset com `is_dynamic_creative: true` em campanhas com objetivo OUTCOME_SALES. A API retorna erro 1885392 ("Objetivo incompatível com anúncios de criativo dinâmico") ao tentar criar o ad. Para testar múltiplas cópias, criar 3 ads separados (um por texto) no mesmo adset, cada um com criativo próprio.
 **Contexto:** Eduardo Embraed — campanha de vendas WhatsApp para Tonino Lamborghini. Solução adotada: 3 creatives + 3 ads com object_story_spec/video_data + CTA WHATSAPP_MESSAGE.

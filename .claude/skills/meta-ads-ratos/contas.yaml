@@ -180,6 +180,15 @@ clientes:
     moeda: "BRL"
     notas: "Pizzaria food service em Chapecó/SC. Contato: Willian Fontanela. Investimento: R$4.500 Meta + R$700 Google. Cliente do Grupo TR."
 
+  lar-art-maison:
+    nome: "Lar Art Maison (Camylla Ramos)"
+    conta_anuncio: "act_1383439802823389"
+    pagina_facebook: "582587468270870"
+    instagram_id: "17841448145563007"
+    instagram_username: "@larartmaison"
+    moeda: "EUR"
+    notas: "Fotografia (gestante/recém-nascido/estúdio), velas naturais artesanais e eventos íntimos. Munique, Alemanha. Público: brasileiros na região. Ticket médio 330€. Budget Meta: até 150€/mês. Cliente do Grupo TR."
+
   walter-matos:
     nome: "Walter Matos Fotografia"
     conta_anuncio: "act_341709522228065"

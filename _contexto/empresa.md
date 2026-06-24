@@ -20,7 +20,7 @@ Trabalha sozinho atendendo múltiplos clientes. Foco em mídia paga (Meta e Goog
 - **Explore Milão** — Passeios e transfers premium em Milão.
 - **Nicolli** — Fotografia em Milão e Lago di Como.
 - **Robson Oliveira Arq** — Arquitetura (projetos residenciais e comerciais). Instagram: @robsonoliveira.arq
-- **Essencialmed** — (briefing a preencher)
+- **Essencialmed** — Distribuidora de materiais médico-hospitalares, Blumenau/SC. Meta Ads (WhatsApp, R$23/dia) + Google Ads (R$23/dia). Luvas, máscaras e EPIs para clínicas e consultórios. Campanhas ativas desde jun/2026. Meu cliente.
 - **Lojas Piana** — Loja de moda masculina em Chapecó/SC. Cliente próprio. Meta Ads (R$30/dia). Público: homens 20–40 anos. Foco em conversas via WhatsApp. Campanha ativa: C07 [ENG] [CBO] com 2 ad sets (ADVT+ e manual 20/40) e criativos ADS 4–10 (vídeos de moda outono). Instagram: @piana.chapeco.
 - **Matheus Grando** — (briefing a preencher)
 - **Pixel Perfect** — (briefing a preencher)

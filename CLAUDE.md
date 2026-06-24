@@ -16,6 +16,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `pizzaria-papa-leone/` — pizzaria food service, Chapecó/SC (Meta Ads + Google Ads)
     - `walter-matos/` — fotografia de casamento documental, Aracaju/SE (Meta Ads)
     - `lar-art-maison/` — fotografia, velas artesanais e eventos íntimos, Munique/Alemanha (Meta Ads)
+    - `nathalia-acahu/` — fotografia de parto e gestantes, Baixada Santista/SP (Meta Ads)
   - `Create/` — clientes da agência Create
     - `sorria-mais/` — clínica odontológica, Joaçaba/SC (implantes e facetas)
     - `arcari-odontologia/` — clínica odontológica premium, Chapecó/SC (implantes e facetas)

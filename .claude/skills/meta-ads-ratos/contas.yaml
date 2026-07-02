@@ -207,6 +207,15 @@ clientes:
     moeda: "BRL"
     notas: "Fotografia de casamento documental em Aracaju/SE. Ticket médio R$3k. Investimento: R$700/mês Meta. Cliente do Grupo TR."
 
+  impulse-studio:
+    nome: "Impulse Studio"
+    conta_anuncio: "act_893299509031444"
+    pagina_facebook: "498197056715670"
+    instagram_id: "17841478572613765"
+    instagram_username: "@impulsestudio.reserva"
+    moeda: "BRL"
+    notas: "Locação de estúdio fotográfico em Florianópolis/SC (estúdios internos + Open Air). Contato: Matheus. Campanhas Meta Ads criadas do zero (não herda estrutura de agência anterior). Meta: CPL R$13, 500 leads/mês. Cliente do Grupo TR."
+
   eduardo-embraed:
     nome: "Eduardo Embraed"
     conta_anuncio: "act_2059433891450244"

@@ -17,6 +17,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `walter-matos/` — fotografia de casamento documental, Aracaju/SE (Meta Ads)
     - `lar-art-maison/` — fotografia, velas artesanais e eventos íntimos, Munique/Alemanha (Meta Ads)
     - `nathalia-acahu/` — fotografia de parto e gestantes, Baixada Santista/SP (Meta Ads)
+    - `impulse-studio/` — locação de estúdio fotográfico, Florianópolis/SC (Meta Ads ativo + Google Ads a definir)
   - `Create/` — clientes da agência Create
     - `sorria-mais/` — clínica odontológica, Joaçaba/SC (implantes e facetas)
     - `arcari-odontologia/` — clínica odontológica premium, Chapecó/SC (implantes e facetas)

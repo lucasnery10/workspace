@@ -65,9 +65,9 @@ Evitar: abstrações desnecessárias, explicações longas sem aplicação prát
 
 - [x] Meta Ads (skill meta-ads-ratos — SDK facebook-business, **token inválido — app deletado, renovar antes de usar**)
 - [x] Google Ads (skill google-ads-ratos — SDK google-ads, OAuth configurado em 19/05/2026, token renovado em 03/06/2026)
-- [ ] Google Drive
+- [x] Google Drive (MCP)
 - [ ] WhatsApp
-- [ ] Gmail
+- [x] Gmail (MCP)
 - [ ] Google Calendar
 
 *(Marcar conforme for instalando os MCPs)*

@@ -1,10 +1,10 @@
 # Foco Atual
 
 ## Fase
-Estruturação da operação — montando processos e ferramentas para escalar o trabalho solo.
+Operação em regime — processos e ferramentas já montados, foco agora em execução recorrente pros clientes ativos e ganho de eficiência no dia a dia.
 
 ## Prioridade principal
-Montar uma operação completa para otimizar a gestão de tráfego e a produção de copy/roteiros para anúncios. Desenvolver estratégia e melhorar os resultados dos clientes de forma mensurável.
+Executar com consistência a gestão de tráfego e a produção de copy/roteiros pros clientes ativos, usando os processos já montados. Desenvolver estratégia e melhorar os resultados dos clientes de forma mensurável.
 
 ## O que pode esperar
 Expansão de equipe ou novos serviços fora de tráfego pago e copy não são prioridade agora.

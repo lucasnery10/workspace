@@ -6,8 +6,8 @@
 **Perfil:** freelancer
 **Atende clientes:** sim, externos
 **Equipe:** solo
-**Ferramentas conectadas:** Meta Ads (SDK facebook-business), Google Ads (SDK google-ads), Gmail (MCP), Google Drive (MCP)
-**Ferramentas pendentes de integração:** WhatsApp, Google Calendar
+**Ferramentas conectadas:** Meta Ads (SDK facebook-business), Google Ads (SDK google-ads), Gmail (MCP), Google Drive (MCP), WhatsApp (MCP), Canva (MCP), Vibe Prospecting (MCP)
+**Ferramentas pendentes de integração:** Google Calendar
 **Principais entregas:** relatórios de performance, copies, roteiros para anúncios, estratégias de campanha
 
 ## Contexto adicional

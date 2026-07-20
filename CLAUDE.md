@@ -19,7 +19,6 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `nathalia-acahu/` — fotografia de parto e gestantes, Baixada Santista/SP (Meta Ads)
     - `impulse-studio/` — locação de estúdio fotográfico, Florianópolis/SC (Meta Ads ativo + Google Ads a definir)
   - `Create/` — clientes da agência Create
-    - `sorria-mais/` — clínica odontológica, Joaçaba/SC (implantes e facetas)
     - `arcari-odontologia/` — clínica odontológica premium, Chapecó/SC (implantes e facetas)
     - `barbearia-portugal/` — barbearia masculina premium (agendamentos via Meta Ads)
     - `rama-odontologia/` — clínica odontológica, Chapecó/SC (implantes, facetas, clareamento)

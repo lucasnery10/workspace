@@ -29,6 +29,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `cacau-show/` — loja física Cacau Show, chocolates e presentes, Chapecó/SC
     - `usaflex/` — loja física Usaflex, calçados e bolsas femininos, Chapecó/SC
     - `soares-mecanica/` — auto elétrica e mecânica, Chapecó/SC (Meta Ads — conversas/WhatsApp)
+    - `artefatto-barbearia/` — barbearia masculina premium, Chapecó/SC (Meta Ads — agendamentos via WhatsApp)
   - `Meus Clientes/` — clientes próprios (fora de agência)
     - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`, `fabricio-revest-decor/`
     - `eduardo-embraed/` — corretor de imóveis da Embraed, Balneário Camboriú/SC (Meta Ads ativo)

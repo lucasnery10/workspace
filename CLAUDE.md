@@ -67,7 +67,7 @@ Evitar: abstrações desnecessárias, explicações longas sem aplicação prát
 - [x] Meta Ads — 2 vias distintas:
   - MCP (`claude.ai MetaAds`, mcp.facebook.com/ads) — **conectado e funcionando**. Usar pra relatórios e leitura de campanhas/insights.
   - skill meta-ads-ratos (SDK facebook-business) — **token inválido, app deletado**. Só recria quando precisar de operações que o MCP não cobre (ex: criar campanha).
-- [x] Google Ads (skill google-ads-ratos — SDK google-ads, OAuth configurado em 19/05/2026, token renovado em 03/06/2026)
+- [x] Google Ads (skill google-ads-ratos — SDK google-ads, OAuth configurado em 19/05/2026, token renovado em 22/07/2026)
 - [x] Google Drive (MCP)
 - [x] WhatsApp (MCP)
 - [x] Gmail (MCP)

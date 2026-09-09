@@ -19,7 +19,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `ruth-volth/` — fotografia de casamento, Uberlândia/MG + Triângulo Mineiro (Meta Ads + Google Ads a definir)
     - `zeca/` — SaaS de seleção e entrega de fotos para fotógrafos, atuação nacional (Meta Ads, primeiro ciclo de anúncios)
     - `stephanie-maciel/` — fotografia de gestante, Chapecó/SC (Meta Ads, onboarding em 04/09/2026)
-    - `eliad-cezar/` — fotografia documental de casamento, Curitiba/PR (Meta Ads, onboarding em 09/09/2026, aguardando IDs Meta Ads)
+    - `eliad-cezar/` — fotografia documental de casamento, Curitiba/PR (Meta Ads, onboarding em 09/09/2026)
   - `Create/` — clientes da agência Create
     - `arcari-odontologia/` — clínica odontológica premium, Chapecó/SC (implantes e facetas)
     - `barbearia-portugal/` — barbearia masculina premium (agendamentos via Meta Ads)

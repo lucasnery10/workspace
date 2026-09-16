@@ -76,6 +76,7 @@ Evitar: abstrações desnecessárias, explicações longas sem aplicação prát
 - [x] Gmail (MCP)
 - [x] Canva (MCP)
 - [x] Vibe Prospecting (MCP)
+- [x] ViewMax / Everygen (MCP — geração de imagem/vídeo)
 - [ ] Google Calendar
 
 *(Marcar conforme for instalando os MCPs)*
@@ -83,6 +84,8 @@ Evitar: abstrações desnecessárias, explicações longas sem aplicação prát
 ## Skills instaladas
 
 - `find-skills` — localiza skills disponíveis no registro (instalada via `npx skills add`)
+- `criativo-ads-ratos` — cria criativos de anúncio (HTML renderizado em PNG) na identidade de qualquer marca, nos três formatos do Meta Ads
+- `nanobanana-ratos` — gera imagens via Nano Banana (Google Gemini)
 - `meta-ads-ratos` — gestão completa de campanhas via SDK (leitura, criação, insights, duplicação)
 - `google-ads-ratos` — gestão completa de Google Ads via SDK (leitura, criação, insights, GAQL)
 - `ads-ratos` — diagnóstico, relatório, auditoria e estratégia com benchmarks brasileiros e Health Score (global)

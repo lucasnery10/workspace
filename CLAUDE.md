@@ -91,6 +91,7 @@ Evitar: abstrações desnecessárias, explicações longas sem aplicação prát
 - `ads-ratos` — diagnóstico, relatório, auditoria e estratégia com benchmarks brasileiros e Health Score (global)
 - `copy-meta` — cria 3 textos principais e 5 headlines para anúncios no Meta Ads com base em briefing e asset
 - `novo-projeto` — cria nova pasta de projeto com CLAUDE.md personalizado via entrevista guiada
+- `gtm-pixel-meta` — setup de traqueamento Pixel Meta via GTM (diagnóstico, passo a passo com nomes exatos do GTM, teste e troubleshooting) (global)
 
 ---
 

@@ -36,7 +36,7 @@ Workspace de trabalho de Lucas Nery, freelancer de tráfego pago e copywriting. 
     - `lojas-piana/`, `essencialmed/`, `matheus-grando/`, `pixel-perfect/`, `fabricio-revest-decor/`
     - `eduardo-embraed/` — corretor de imóveis da Embraed, Balneário Camboriú/SC (Meta Ads ativo)
     - `ctrl-tech/` — loja de equipamentos de fotografia, vídeo e iluminação profissional, público misto (Meta Ads — catálogo de produtos)
-    - `abrange-construtora/` — construtora, empreendimento a definir via análise do Drive (onboarding em 10/11/2026)
+    - `abrange-incorporadora/` — incorporadora, foco no UNIK Residence (9 apts, Balneário Piçarras/SC), meta: vender as 4 unidades restantes até 31/12/2026 (Meta Ads, onboarding em 10/11/2026)
 - `conteudo/` — produção de roteiros, copys e estratégias
 - `tarefas.md` — controle de pendências operacionais (MCPs a instalar, tarefas por cliente)
 
